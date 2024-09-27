@@ -1,0 +1,29 @@
+/* src/styles/footer.css */
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.app {
+  flex: 1; /* Faz com que o conteúdo principal ocupe o espaço disponível */
+}
+
+.footer {
+  position: relative; /* ou fixed se você quiser que fique sempre visível na parte inferior */
+  bottom: 0;
+  width: 100%;
+}
+
+.social-links a {
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
