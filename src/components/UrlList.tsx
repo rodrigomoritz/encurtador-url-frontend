@@ -6,7 +6,7 @@ const UrlList: React.FC = () => {
 
   const fetchUrls = async () => {
     try {
-      const response = await axios.get('http://localhost:3333/api/url/all');
+      const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/url/all`);
       setUrls(response.data);
     } catch (error) {
       console.error('Error fetching URLs:', error);
