@@ -3,7 +3,6 @@ import axios from 'axios';
 import logo from '../assets/logo.png'; // Importe a imagem da logo
 
 const UrlShortener: React.FC = () => {
-  const apiUrl = process.env.REACT_APP_API_URL;
 
   const [originalUrl, setOriginalUrl] = useState('');
   const [shortUrl, setShortUrl] = useState('');
@@ -12,7 +11,7 @@ const UrlShortener: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const response = await axios.post(`${apiUrl}/api/url/shorten`, { originalUrl }, {
+      const response = await axios.post(`https://encurtador-url-zn5k.onrender.com/api/url/shorten`, { originalUrl }, {
         timeout: 5000,
         withCredentials:false,
         headers: {

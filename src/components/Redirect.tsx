@@ -10,12 +10,11 @@ const Redirect: React.FC = () => {
   const [alertMessage, setAlertMessage] = useState<string | null>(null);
   const [alertType, setAlertType] = useState<'success' | 'danger' | null>(null);
 
-  const apiUrl = process.env.REACT_APP_API_URL;
 
   useEffect(() => {
     const fetchOriginalUrl = async () => {
       try {
-        const response = await axios.get(`${apiUrl}/${shortUrl}`);
+        const response = await axios.get(`https://encurtador-url-zn5k.onrender.com/${shortUrl}`);
 
         if (response.data.originalUrl) {
           setTimeout(() => {
@@ -34,7 +33,7 @@ const Redirect: React.FC = () => {
     };
 
     fetchOriginalUrl();
-  }, [shortUrl,apiUrl]);
+  }, [shortUrl]);
 
   const handleCloseAlert = () => {
     setAlertMessage(null);

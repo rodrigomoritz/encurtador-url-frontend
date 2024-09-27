@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
-const apiUrl = process.env.REACT_APP_API_URL;
-
 const UrlList: React.FC = () => {
 
 
@@ -10,7 +8,7 @@ const UrlList: React.FC = () => {
 
   const fetchUrls = async () => {
     try {
-      const response = await axios.get(`${apiUrl}/api/url/all`);
+      const response = await axios.get(`https://encurtador-url-zn5k.onrender.com/api/url/all`);
       setUrls(response.data);
     } catch (error) {
       console.error('Error fetching URLs:', error);
