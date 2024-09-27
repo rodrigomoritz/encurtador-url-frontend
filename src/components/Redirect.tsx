@@ -10,10 +10,12 @@ const Redirect: React.FC = () => {
   const [alertMessage, setAlertMessage] = useState<string | null>(null);
   const [alertType, setAlertType] = useState<'success' | 'danger' | null>(null);
 
+  const apiUrl = process.env.REACT_APP_API_URL;
+
   useEffect(() => {
     const fetchOriginalUrl = async () => {
       try {
-        const response = await axios.get(`${process.env.REACT_APP_API_URL}/${shortUrl}`);
+        const response = await axios.get(`${apiUrl}/${shortUrl}`);
 
         if (response.data.originalUrl) {
           setTimeout(() => {
@@ -32,7 +34,7 @@ const Redirect: React.FC = () => {
     };
 
     fetchOriginalUrl();
-  }, [shortUrl]);
+  }, [shortUrl,apiUrl]);
 
   const handleCloseAlert = () => {
     setAlertMessage(null);

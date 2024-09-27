@@ -1,12 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
+const apiUrl = process.env.REACT_APP_API_URL;
+
 const UrlList: React.FC = () => {
+
+
   const [urls, setUrls] = useState<any[]>([]);
 
   const fetchUrls = async () => {
     try {
-      const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/url/all`);
+      const response = await axios.get(`${apiUrl}/api/url/all`);
       setUrls(response.data);
     } catch (error) {
       console.error('Error fetching URLs:', error);
