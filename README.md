@@ -1,46 +1,62 @@
-# Getting Started with Create React App
+# Encurtador de URL - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é o frontend de um sistema de encurtador de URLs. O projeto foi desenvolvido utilizando React e permite encurtar URLs, listar as URLs encurtadas e redirecionar para as URLs originais.
 
-## Available Scripts
+## Tecnologias Utilizadas
+- **Node.js (v14 ou superior)
+- **React: Biblioteca JavaScript para construção de interfaces de usuário.
+- **Bootstrap: Framework CSS para estilização.
+- **Axios: Biblioteca para fazer requisições HTTP.
+- **React Router: Biblioteca para gerenciamento de rotas no React.
 
-In the project directory, you can run:
+## Pré-requisitos
+- **Node.js (v14 ou superior)
+- **npm ou yarn
 
-### `npm start`
+## Instalação
+Siga os passos abaixo para configurar e rodar o projeto localmente.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. **Clone o repositório:**
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+   ```bash
+   git clone https://github.com/seuusuario/encurtador-url.git
+   cd encurtador-url
 
-### `npm test`
+2. **Instale as dependências:**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   npm install
 
-### `npm run build`
+3. **Executando o projeto**
+   ```bash
+   npm run start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Contribuição
+Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Licença
+Este projeto está licenciado sob a MIT License. Veja o arquivo LICENSE para mais detalhes.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contato
+Se você tiver alguma dúvida ou sugestão, entre em contato:
 
-### `npm run eject`
+Email: rodrigomoritz.br@gmail.com
+GitHub: rodrigomoritz
+   
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+   
+   
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
+Funcionalidades
+Encurtar URLs: Insira uma URL longa e receba uma URL encurtada.
+Listar URLs: Veja todas as URLs encurtadas e suas URLs originais.
+Redirecionamento: Ao acessar a URL encurtada, o sistema redireciona automaticamente para a URL original.
+
+
+
